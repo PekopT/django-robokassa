@@ -6,6 +6,8 @@ try:
     long_description = open('README.rst').read().decode('utf8')
 except AttributeError:
     long_description = open('README.rst').read()
+except Exception: 
+    long_description = ''
 
 
 setup(
